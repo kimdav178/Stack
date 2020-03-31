@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Stack.dir/Subforwardlist2.cpp.o"
+  "CMakeFiles/Stack.dir/Subforwardlist.cpp.o"
   "CMakeFiles/Stack.dir/Subvector.cpp.o"
   "CMakeFiles/Stack.dir/main.cpp.o"
   "Stack"

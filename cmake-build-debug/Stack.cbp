@@ -84,10 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/david/Рабочий стол/Stack/Subforwardlist2.cpp">
+		<Unit filename="/home/david/Рабочий стол/Stack/Subforwardlist.cpp">
 			<Option target="Stack"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Stack/Subforwardlist2.h">
+		<Unit filename="/home/david/Рабочий стол/Stack/Subforwardlist.h">
 			<Option target="Stack"/>
 		</Unit>
 		<Unit filename="/home/david/Рабочий стол/Stack/Subvector.cpp">

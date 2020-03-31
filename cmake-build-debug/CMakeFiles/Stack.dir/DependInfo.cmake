@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/david/Рабочий стол/Stack/Subforwardlist2.cpp" "/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles/Stack.dir/Subforwardlist2.cpp.o"
+  "/home/david/Рабочий стол/Stack/Subforwardlist.cpp" "/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles/Stack.dir/Subforwardlist.cpp.o"
   "/home/david/Рабочий стол/Stack/Subvector.cpp" "/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles/Stack.dir/Subvector.cpp.o"
   "/home/david/Рабочий стол/Stack/main.cpp" "/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles/Stack.dir/main.cpp.o"
   )

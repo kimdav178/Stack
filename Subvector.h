@@ -12,17 +12,24 @@ using namespace std;
 class Subvector
 {
 private:
-    double *mas;
-    unsigned int top;
-    unsigned int capacity;
+    double *mas;    // Указатель на первый элемент вектора (динамического массива)
+
+    unsigned int top;   // Количество элементов вектора
+
+    unsigned int capacity;  // Размер (вместительность) вектора
+
 public:
-    Subvector();
-    ~Subvector();
-    bool push_back(double d);
-    int pop_back();
-    bool resize(unsigned int new_capacity);
-    void shrink_to_fit();
-    void clear();
+    Subvector();    // Конструктор недовектора
+
+    ~Subvector();   // Деструктор
+
+    bool push_back(double d);   // Добавление элемента в конец
+
+    int pop_back(); // Вывод элемента из конца
+
+    bool resize(unsigned int new_capacity); // Изменить размер массива
+
+    void shrink_to_fit();   // Удалить свободные ячейки
 };
 
 

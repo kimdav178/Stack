@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Рабочий стол/Stack/Subforwardlist2.cpp
-Subforwardlist2.h
-/home/david/Рабочий стол/Stack/Subforwardlist2.h
+/home/david/Рабочий стол/Stack/Subforwardlist.cpp
+Subforwardlist.h
+/home/david/Рабочий стол/Stack/Subforwardlist.h
 
-/home/david/Рабочий стол/Stack/Subforwardlist2.h
+/home/david/Рабочий стол/Stack/Subforwardlist.h
 iostream
 -
 
 /home/david/Рабочий стол/Stack/main.cpp
 iostream
 -
-Subforwardlist2.h
-/home/david/Рабочий стол/Stack/Subforwardlist2.h
-Subforwardlist2.cpp
-/home/david/Рабочий стол/Stack/Subforwardlist2.cpp
+Subforwardlist.h
+/home/david/Рабочий стол/Stack/Subforwardlist.h
+Subforwardlist.cpp
+/home/david/Рабочий стол/Stack/Subforwardlist.cpp
 

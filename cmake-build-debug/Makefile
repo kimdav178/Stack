@@ -123,32 +123,32 @@ Stack/fast:
 	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/build
 .PHONY : Stack/fast
 
-Subforwardlist2.o: Subforwardlist2.cpp.o
+Subforwardlist.o: Subforwardlist.cpp.o
 
-.PHONY : Subforwardlist2.o
+.PHONY : Subforwardlist.o
 
 # target to build an object file
-Subforwardlist2.cpp.o:
-	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Subforwardlist2.cpp.o
-.PHONY : Subforwardlist2.cpp.o
+Subforwardlist.cpp.o:
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Subforwardlist.cpp.o
+.PHONY : Subforwardlist.cpp.o
 
-Subforwardlist2.i: Subforwardlist2.cpp.i
+Subforwardlist.i: Subforwardlist.cpp.i
 
-.PHONY : Subforwardlist2.i
+.PHONY : Subforwardlist.i
 
 # target to preprocess a source file
-Subforwardlist2.cpp.i:
-	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Subforwardlist2.cpp.i
-.PHONY : Subforwardlist2.cpp.i
+Subforwardlist.cpp.i:
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Subforwardlist.cpp.i
+.PHONY : Subforwardlist.cpp.i
 
-Subforwardlist2.s: Subforwardlist2.cpp.s
+Subforwardlist.s: Subforwardlist.cpp.s
 
-.PHONY : Subforwardlist2.s
+.PHONY : Subforwardlist.s
 
 # target to generate assembly for a file
-Subforwardlist2.cpp.s:
-	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Subforwardlist2.cpp.s
-.PHONY : Subforwardlist2.cpp.s
+Subforwardlist.cpp.s:
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Subforwardlist.cpp.s
+.PHONY : Subforwardlist.cpp.s
 
 Subvector.o: Subvector.cpp.o
 
@@ -213,9 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Stack"
 	@echo "... edit_cache"
-	@echo "... Subforwardlist2.o"
-	@echo "... Subforwardlist2.i"
-	@echo "... Subforwardlist2.s"
+	@echo "... Subforwardlist.o"
+	@echo "... Subforwardlist.i"
+	@echo "... Subforwardlist.s"
 	@echo "... Subvector.o"
 	@echo "... Subvector.i"
 	@echo "... Subvector.s"

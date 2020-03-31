@@ -14,6 +14,18 @@ Subvector::Subvector()
     capacity=0;
 }
 
+Subvector::~Subvector()
+{
+    double* p;
+    p=new double[0];
+    for (int i=0; i<capacity; i++) {
+        delete(&(mas[i]));
+    }
+    mas=p;
+    capacity=0;
+    top=0;
+}
+
 bool Subvector::push_back(double d)
 {
     double* q;
@@ -62,20 +74,4 @@ void Subvector::shrink_to_fit() {
         delete(&(mas[i]));
     }
     capacity=top;
-}
-
-void Subvector::clear() {
-    top=0;
-}
-
-Subvector::~Subvector()
-{
-    double* p;
-    p=new double[0];
-    for (int i=0; i<capacity; i++) {
-        delete(&(mas[i]));
-    }
-    mas=p;
-    capacity=0;
-    top=0;
 }

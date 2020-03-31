@@ -1,11 +1,11 @@
 #include <iostream>
-#include "Subforwardlist2.h"
-#include "Subforwardlist2.cpp"
+#include "Subforwardlist.h"
+#include "Subforwardlist.cpp"
 using namespace std;
 
 int main() {
     int i,n;
-    Subforwardlist2 a;
+    Subforwardlist a;
     cin >>n;
     a.push_back(n);
     cout <<a.size() <<endl;

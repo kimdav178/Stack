@@ -2,51 +2,51 @@
 // Created by david on 31.03.2020.
 //
 
-#include "Subforwardlist2.h"
+#include "Subforwardlist.h"
 
 using namespace std;
 
-Subforwardlist2::Subforwardlist2()
+Subforwardlist::Subforwardlist()
 {
     data = 0;
     next = NULL;
 }
 
-Subforwardlist2::~Subforwardlist2()
+Subforwardlist::~Subforwardlist()
 {
     if (this == NULL)
     {
         return;
     }
-    Subforwardlist2 **t = new Subforwardlist2*;
+    Subforwardlist **t = new Subforwardlist*;
     *t = this;
     while (*t != NULL)
     {
         *t=(*t)->getNext();
     }
     delete t;
-    this->~Subforwardlist2();
+    this->~Subforwardlist();
 }
 
-double Subforwardlist2::getData() {
+double Subforwardlist::getData() {
     return data;
 }
 
-void Subforwardlist2::setData(double d) {
+void Subforwardlist::setData(double d) {
     data=d;
 }
 
-Subforwardlist2* Subforwardlist2::getNext() {
+Subforwardlist* Subforwardlist::getNext() {
     return next;
 }
 
-void Subforwardlist2::setNext(Subforwardlist2* t) {
+void Subforwardlist::setNext(Subforwardlist* t) {
     next=t;
 }
 
-bool Subforwardlist2::push_back(double d)
+bool Subforwardlist::push_back(double d)
 {
-    Subforwardlist2 *a = new Subforwardlist2;
+    Subforwardlist *a = new Subforwardlist;
     a->setNext(this);
     if (a==NULL)
     {
@@ -59,7 +59,7 @@ bool Subforwardlist2::push_back(double d)
         {
             a=a->getNext();
         }
-        Subforwardlist2 *q = new Subforwardlist2;
+        Subforwardlist *q = new Subforwardlist;
         q->setData(d);
         q->setNext(NULL);
         a->setNext(q);
@@ -69,7 +69,7 @@ bool Subforwardlist2::push_back(double d)
     return true;
 }
 
-int Subforwardlist2::pop_back()
+int Subforwardlist::pop_back()
 {
     if (this == NULL)
     {
@@ -78,9 +78,9 @@ int Subforwardlist2::pop_back()
     else
     {
         double n=0;
-        Subforwardlist2 *t= new Subforwardlist2;
-        Subforwardlist2 *q= new Subforwardlist2;
-        Subforwardlist2 *r= new Subforwardlist2;
+        Subforwardlist *t= new Subforwardlist;
+        Subforwardlist *q= new Subforwardlist;
+        Subforwardlist *r= new Subforwardlist;
         t=this;
         *r=*t;
         if (t->getNext() == NULL)
@@ -107,9 +107,9 @@ int Subforwardlist2::pop_back()
     }
 }
 
-bool Subforwardlist2::push_forward(double d)
+bool Subforwardlist::push_forward(double d)
 {
-    Subforwardlist2 *t= new Subforwardlist2;
+    Subforwardlist *t= new Subforwardlist;
     if (this==NULL)
     {
         t->setData(d);
@@ -119,7 +119,7 @@ bool Subforwardlist2::push_forward(double d)
     }
     else
     {
-        Subforwardlist2 *r=new Subforwardlist2;
+        Subforwardlist *r=new Subforwardlist;
         r=this;
         t->setData(d);
         t->setNext(r);
@@ -128,7 +128,7 @@ bool Subforwardlist2::push_forward(double d)
     return true;
 }
 
-int Subforwardlist2::pop_forward()
+int Subforwardlist::pop_forward()
 {
     if (this==NULL)
     {
@@ -137,7 +137,7 @@ int Subforwardlist2::pop_forward()
     else
     {
         double n=this->getData();
-        Subforwardlist2 *t= new Subforwardlist2;
+        Subforwardlist *t= new Subforwardlist;
         *t=*this->getNext();
         delete this;
         *this=*t;
@@ -145,7 +145,7 @@ int Subforwardlist2::pop_forward()
     }
 }
 
-bool Subforwardlist2::push_where(unsigned int where, double d)
+bool Subforwardlist::push_where(unsigned int where, double d)
 {
     if (this==NULL)
     {
@@ -155,7 +155,7 @@ bool Subforwardlist2::push_where(unsigned int where, double d)
         }
         else
         {
-            Subforwardlist2 *t = new Subforwardlist2;
+            Subforwardlist *t = new Subforwardlist;
             t->setData(d);
             t->setNext(NULL);
             *this = *t;
@@ -163,8 +163,8 @@ bool Subforwardlist2::push_where(unsigned int where, double d)
     }
     else
     {
-        Subforwardlist2 *t = new Subforwardlist2;
-        Subforwardlist2 *r = new Subforwardlist2;
+        Subforwardlist *t = new Subforwardlist;
+        Subforwardlist *r = new Subforwardlist;
         t=this;
         *r=*t;
         int i=1;
@@ -179,8 +179,8 @@ bool Subforwardlist2::push_where(unsigned int where, double d)
         }
         else
         {
-            Subforwardlist2 *q = new Subforwardlist2;
-            Subforwardlist2 *w = new Subforwardlist2;
+            Subforwardlist *q = new Subforwardlist;
+            Subforwardlist *w = new Subforwardlist;
             w->setData(t->getData());
             w->setNext(t->getNext());
             q->setData(d);
@@ -196,7 +196,7 @@ bool Subforwardlist2::push_where(unsigned int where, double d)
     }
 }
 
-bool Subforwardlist2::erase_where (unsigned int d)
+bool Subforwardlist::erase_where (unsigned int d)
 {
     if (this==NULL)
     {
@@ -204,8 +204,8 @@ bool Subforwardlist2::erase_where (unsigned int d)
     }
     else
     {
-        Subforwardlist2 *t = new Subforwardlist2;
-        Subforwardlist2 *r = new Subforwardlist2;
+        Subforwardlist *t = new Subforwardlist;
+        Subforwardlist *r = new Subforwardlist;
         int i=1;
         t=this;
         *r=*t;
@@ -229,7 +229,7 @@ bool Subforwardlist2::erase_where (unsigned int d)
     }
 }
 
-unsigned int Subforwardlist2::size ()
+unsigned int Subforwardlist::size ()
 {
     if (this == NULL)
     {
@@ -238,7 +238,7 @@ unsigned int Subforwardlist2::size ()
     else
     {
         int i=1;
-        Subforwardlist2 *t = new Subforwardlist2;
+        Subforwardlist *t = new Subforwardlist;
         t=this;
         while (t->next != NULL)
         {

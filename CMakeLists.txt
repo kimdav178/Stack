@@ -3,4 +3,4 @@ project(Stack)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable (Stack main.cpp Subvector.cpp Subvector.h Subforwardlist2.cpp Subforwardlist2.h)
+add_executable (Stack main.cpp Subvector.cpp Subvector.h Subforwardlist.cpp Subforwardlist.h)

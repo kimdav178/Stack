@@ -83,31 +83,31 @@ CMakeFiles/Stack.dir/Subvector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/Subvector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Рабочий стол/Stack/Subvector.cpp" -o CMakeFiles/Stack.dir/Subvector.cpp.s
 
-CMakeFiles/Stack.dir/Subforwardlist2.cpp.o: CMakeFiles/Stack.dir/flags.make
-CMakeFiles/Stack.dir/Subforwardlist2.cpp.o: ../Subforwardlist2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Stack.dir/Subforwardlist2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Stack.dir/Subforwardlist2.cpp.o -c "/home/david/Рабочий стол/Stack/Subforwardlist2.cpp"
+CMakeFiles/Stack.dir/Subforwardlist.cpp.o: CMakeFiles/Stack.dir/flags.make
+CMakeFiles/Stack.dir/Subforwardlist.cpp.o: ../Subforwardlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Stack.dir/Subforwardlist.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Stack.dir/Subforwardlist.cpp.o -c "/home/david/Рабочий стол/Stack/Subforwardlist.cpp"
 
-CMakeFiles/Stack.dir/Subforwardlist2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Stack.dir/Subforwardlist2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/david/Рабочий стол/Stack/Subforwardlist2.cpp" > CMakeFiles/Stack.dir/Subforwardlist2.cpp.i
+CMakeFiles/Stack.dir/Subforwardlist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Stack.dir/Subforwardlist.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/david/Рабочий стол/Stack/Subforwardlist.cpp" > CMakeFiles/Stack.dir/Subforwardlist.cpp.i
 
-CMakeFiles/Stack.dir/Subforwardlist2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/Subforwardlist2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Рабочий стол/Stack/Subforwardlist2.cpp" -o CMakeFiles/Stack.dir/Subforwardlist2.cpp.s
+CMakeFiles/Stack.dir/Subforwardlist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/Subforwardlist.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Рабочий стол/Stack/Subforwardlist.cpp" -o CMakeFiles/Stack.dir/Subforwardlist.cpp.s
 
 # Object files for target Stack
 Stack_OBJECTS = \
 "CMakeFiles/Stack.dir/main.cpp.o" \
 "CMakeFiles/Stack.dir/Subvector.cpp.o" \
-"CMakeFiles/Stack.dir/Subforwardlist2.cpp.o"
+"CMakeFiles/Stack.dir/Subforwardlist.cpp.o"
 
 # External object files for target Stack
 Stack_EXTERNAL_OBJECTS =
 
 Stack: CMakeFiles/Stack.dir/main.cpp.o
 Stack: CMakeFiles/Stack.dir/Subvector.cpp.o
-Stack: CMakeFiles/Stack.dir/Subforwardlist2.cpp.o
+Stack: CMakeFiles/Stack.dir/Subforwardlist.cpp.o
 Stack: CMakeFiles/Stack.dir/build.make
 Stack: CMakeFiles/Stack.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/david/Рабочий стол/Stack/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Stack"
