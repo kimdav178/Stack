@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/untitled.dir/main.cpp.o CMakeFiles/untitled.dir/Subvector.cpp.o CMakeFiles/untitled.dir/Subforwardlist2.cpp.o  -o untitled 
